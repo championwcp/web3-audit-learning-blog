@@ -1,0 +1,12 @@
+title: 合约审计学习笔记
+description: 从公开审计报告出发，记录 Solidity、治理、DeFi 与合约安全的真实学习过程。
+lang: zh-CN
+url: https://championwcp.github.io
+baseurl: /web3-audit-learning-blog
+timezone: Asia/Shanghai
+markdown: kramdown
+permalink: /:title/
+future: true
+exclude:
+  - README.md
+

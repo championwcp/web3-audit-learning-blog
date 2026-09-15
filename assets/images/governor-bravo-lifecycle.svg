@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Governor Bravo 提案生命周期</title>
+  <desc id="desc">提案从 Pending 到 Active，通过后成为 Succeeded，排队后成为 Queued，显式执行后成为 Executed；也可能 Defeated 或 Expired。</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1628"/><stop offset="1" stop-color="#111d32"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5ee6f0"/><stop offset=".62" stop-color="#9b80ff"/><stop offset="1" stop-color="#f0b85c"/></linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#bg2)"/>
+  <text x="60" y="55" fill="#7891ac" font-family="Arial,'Noto Sans SC',sans-serif" font-size="19" letter-spacing="3">PROPOSAL STATE MACHINE</text>
+  <path d="M128 165H1060" stroke="url(#line)" stroke-width="5" stroke-linecap="round"/>
+  <g font-family="Arial,'Noto Sans SC',sans-serif" text-anchor="middle">
+    <g transform="translate(130 165)"><circle r="32" fill="#112b42" stroke="#5ee6f0" stroke-width="4"/><circle r="8" fill="#5ee6f0"/><text y="70" fill="#fff" font-size="21" font-weight="700">Pending</text><text y="96" fill="#839db5" font-size="15">等待投票开始</text></g>
+    <g transform="translate(350 165)"><circle r="32" fill="#142a45" stroke="#68c9f1" stroke-width="4"/><circle r="8" fill="#68c9f1"/><text y="70" fill="#fff" font-size="21" font-weight="700">Active</text><text y="96" fill="#839db5" font-size="15">开放投票</text></g>
+    <g transform="translate(570 165)"><circle r="32" fill="#1d264a" stroke="#8d8bff" stroke-width="4"/><circle r="8" fill="#8d8bff"/><text y="70" fill="#fff" font-size="21" font-weight="700">Succeeded</text><text y="96" fill="#9b9abd" font-size="15">投票通过，尚未排队</text></g>
+    <g transform="translate(790 165)"><circle r="32" fill="#222342" stroke="#b47ff1" stroke-width="4"/><circle r="8" fill="#b47ff1"/><text y="70" fill="#fff" font-size="21" font-weight="700">Queued</text><text y="96" fill="#9b9abd" font-size="15">已设置 eta，等待延迟</text></g>
+    <g transform="translate(1010 165)"><circle r="32" fill="#33291a" stroke="#f0b85c" stroke-width="4"/><circle r="8" fill="#f0b85c"/><text y="70" fill="#fff" font-size="21" font-weight="700">Executed</text><text y="96" fill="#b8a681" font-size="15">显式执行后才生效</text></g>
+    <path d="M350 197V294H515" fill="none" stroke="#657a91" stroke-width="2"/><text x="555" y="300" fill="#8195aa" font-size="16" text-anchor="start">票数不足 → Defeated</text>
+    <path d="M790 197V324H905" fill="none" stroke="#657a91" stroke-width="2"/><text x="945" y="330" fill="#8195aa" font-size="16" text-anchor="start">超过宽限期 → Expired</text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+---
+layout: default
+title: 首页
+---
+
+<section class="site-hero">
+  <div class="site-hero__image" role="img" aria-label="链上治理、代理与 Timelock 的抽象插画"></div>
+  <div class="site-hero__shade"></div>
+  <div class="site-hero__content">
+    <p class="eyebrow">WEB3 · SOLIDITY · SECURITY</p>
+    <h1>把读过的审计报告，<br>变成可复查的理解。</h1>
+    <p>这里记录一个 C++ 开发者学习智能合约开发与安全的过程：包括最初的误解、源码带来的修正，以及下一次可以复用的检查项。</p>
+    <a class="button" href="{{ '/governor-bravo-audit-learning-notes/' | relative_url }}">阅读第一篇文章 <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<section class="section-shell intro-grid">
+  <div>
+    <p class="section-kicker">WRITING PRINCIPLE</p>
+    <h2>不冒充资深审计员，也不只做报告摘要</h2>
+  </div>
+  <div class="intro-copy">
+    <p>每篇文章只使用已经核验的理解，保留审计 commit 和修复语境，重点写清楚：系统如何运作、我哪里理解错了、代码为什么改变了我的判断。</p>
+  </div>
+</section>
+
+<section class="section-shell">
+  <div class="section-heading">
+    <div>
+      <p class="section-kicker">LATEST NOTE</p>
+      <h2>最新学习笔记</h2>
+    </div>
+    <span class="article-count">01</span>
+  </div>
+
+  {% assign post = site.posts.first %}
+  <article class="post-card">
+    <a class="post-card__image" href="{{ post.url | relative_url }}" aria-label="阅读 {{ post.title }}">
+      <img src="{{ post.image | relative_url }}" alt="Governor Bravo 治理与 Timelock 主题插画">
+    </a>
+    <div class="post-card__content">
+      <div class="tag-row"><span>Governor Bravo</span><span>Audit Learning</span></div>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.description }}</p>
+      <div class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">2026.09.15</time><span>约 12 分钟阅读</span></div>
+    </div>
+  </article>
+</section>
+

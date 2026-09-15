@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <div class="post-header__inner">
+      <a class="back-link" href="{{ '/' | relative_url }}">← 返回文章列表</a>
+      <div class="tag-row"><span>Solidity</span><span>Governance</span><span>Audit Learning</span></div>
+      <h1>{{ page.title }}</h1>
+      <p class="post-deck">{{ page.description }}</p>
+      <div class="post-byline">
+        <span class="avatar">CW</span>
+        <div><strong>championwcp</strong><span>2026 年 9 月 15 日 · 约 12 分钟阅读</span></div>
+      </div>
+    </div>
+  </header>
+  <div class="post-cover section-shell">
+    <img src="{{ page.image | relative_url }}" alt="Governor Bravo 治理、代理与 Timelock 主题插画">
+  </div>
+  <div class="post-layout section-shell">
+    <aside class="post-aside" aria-label="文章信息">
+      <div class="aside-rule"></div>
+      <p>学习型技术文章</p><p>公开报告复盘</p><p>无漏洞复现</p>
+    </aside>
+    <div class="post-content">{{ content }}</div>
+  </div>
+</article>
+
