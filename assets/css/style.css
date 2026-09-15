@@ -75,7 +75,7 @@ nav a:hover { color: var(--text); }
 .post-content code { padding: .14em .36em; border: 1px solid rgba(160,178,199,.16); border-radius: 5px; background: #0b1726; color: #a9e6ea; font-size: .9em; }
 .post-content ul, .post-content ol { padding-left: 1.35em; }
 .post-content li { margin: .65em 0; }
-.article-figure { margin: 38px -48px 46px; }
+.article-figure { margin: 38px 0 46px; }
 .article-figure img { width: 100%; border: 1px solid var(--line); border-radius: 18px; }
 .article-figure figcaption { margin-top: 12px; color: #72879d; text-align: center; font-size: 13px; }
 
